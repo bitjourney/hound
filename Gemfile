@@ -12,6 +12,7 @@ gem "bourbon"
 gem "coffee-rails"
 gem "coffeelint"
 gem "email_validator"
+gem "dotenv-rails"
 gem "faraday"
 gem "font-awesome-rails"
 gem "haml-rails"
@@ -42,16 +43,26 @@ group :staging, :production do
   gem "rack-timeout"
   gem "rails_12factor"
   gem "sentry-raven", ">= 0.12.2"
+  gem "therubyracer"
 end
 
 group :development, :test do
   gem "byebug"
-  gem "dotenv-rails"
   gem "foreman"
   gem "jasmine-rails"
   gem "poltergeist"
   gem "rspec-rails", ">= 3.4"
   gem "bundler-audit", require: false
+end
+
+group :development do
+  gem 'capistrano',            require: false
+  gem 'capistrano-bundler',    require: false
+  gem 'capistrano-postgresql', require: false
+  gem 'capistrano-rails',      require: false
+  gem 'capistrano-rbenv',      require: false
+  gem 'capistrano-resque',    require: false
+  gem 'capistrano3-unicorn',   require: false
 end
 
 group :test do
