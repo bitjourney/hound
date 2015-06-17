@@ -40,6 +40,7 @@ gem "unicorn"
 group :staging, :production do
   gem "rails_12factor"
   gem "sentry-raven"
+  gem "therubyracer"
 end
 
 group :development, :test do
