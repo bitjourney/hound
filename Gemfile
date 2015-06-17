@@ -28,6 +28,8 @@ gem "resque", "~> 1.25.0"
 gem "resque-scheduler"
 gem "resque-sentry"
 gem "rubocop", "0.29.1"
+gem "rubocop-bitjourney", github: "bitjourney/rubocop-bitjourney"
+gem "rubocop-rspec"
 gem "sass-rails"
 gem "scss-lint", "0.34.0", require: false
 gem "split", require: "split/dashboard"
