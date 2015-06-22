@@ -9,7 +9,7 @@ before_exec do |server|
   ENV['BUNDLE_GEMFILE'] = "#{app_path}/Gemfile"
 end
 
-worker_processes Integer(ENV["WEB_CONCURRENCY"] || 3)
+worker_processes Integer(ENV["WEB_CONCURRENCY"] || 1)
 timeout (ENV["UNICORN_TIMEOUT"] || 15).to_i
 preload_app true
 
