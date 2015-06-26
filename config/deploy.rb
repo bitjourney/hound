@@ -15,5 +15,7 @@ set :rbenv_ruby, '2.2.2'
 
 set :unicorn_bin, 'unicorn_rails'
 
+set :resque_log_file, 'log/resque.log'
+
 after 'deploy:updated', 'deploy:migrate'
 after 'deploy:finished', 'deploy:cleanup'
