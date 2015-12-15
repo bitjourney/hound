@@ -11,7 +11,7 @@ set :bundle_binstubs, nil
 
 set :rbenv_map_bins, %w(rake gem bundle ruby rails)
 set :rbenv_type, :system
-set :rbenv_ruby, '2.2.2'
+set :rbenv_ruby, '2.2.3'
 
 set :unicorn_bin, 'unicorn_rails'
 
