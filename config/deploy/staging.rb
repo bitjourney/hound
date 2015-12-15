@@ -1,6 +1,6 @@
 set :stage, :staging
 
-app_server = %w(dev-001)
+app_server = %w(app-misc-001)
 role :app, app_server
 role :db, app_server
 
